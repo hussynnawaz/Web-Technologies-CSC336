@@ -1,0 +1,25 @@
+  <!DOCTYPE html><html><head></head>
+<body>
+	<button onclick="checkday()">Click Here</button>
+
+	<script type="text/javascript">
+	function checkday()
+	{	var x;
+		var y=prompt("Please enter a day name","");
+
+		switch (y)
+		{	case "monday":
+			case "tuesday":
+			case "wednesday":
+                alert('More Busy Days');
+			break;
+			case "thursday":
+			case "friday":
+				alert('Less Busy Days');
+			break;
+			default:
+			alert('Holiday');
+			break;
+		}
+	}
+</script></body></html>

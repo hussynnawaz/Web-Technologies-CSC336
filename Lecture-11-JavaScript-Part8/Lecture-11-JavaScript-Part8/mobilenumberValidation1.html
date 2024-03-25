@@ -1,0 +1,39 @@
+ <!DOCTYpe html>
+<html>
+<head>
+    <title>Mobile Number Validation</title>
+	<script type="text/javascript">
+		function valCheck()
+		{
+			var mobNum=document.getElementById("mobileNumber").value;
+			if(mobNum=="")
+				{document.getElementById("message").innerHTML="**Please fill the mobile number";
+				 return false;}
+			
+			if(isNaN(mobNum))
+				{document.getElementById("message").innerHTML="** only number is required to input";
+				 return false;}
+			
+			if(mobNum.length<11)
+				{document.getElementById("message").innerHTML="** mobile number must be 11 digits long";
+				 return false;}
+
+			if(mobNum.length>11)
+				{document.getElementById("message").innerHTML="** mobile number must be 11 digits long";
+				 return false;}	
+			if((mobNum.charAt(0)!=0)&&(mobNum.charAt(0)!=9))
+				{document.getElementById("message").innerHTML="** mobile number must be either start with 0 or 9";
+				 return false;} 
+		}
+	</script>
+</head>
+<body>
+	<h1 style="color: purple;text-align: center;">Mobile Number Validation</h1>
+	<form onsubmit="return valCheck()" action="acceptForm.html" method="post">
+		Mobile Number: <input type="text" name="" id="mobileNumber" value="">
+		<span id="message" style="color: red"></span><br/>
+		<input type="submit" value="submit">
+		
+	</form>
+</body>
+</html>

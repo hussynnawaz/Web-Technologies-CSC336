@@ -1,0 +1,28 @@
+ <!DOCTYPE html><html>
+<head>
+	<h1>repetition</h1>
+	<script type="text/javascript">
+		var i=0;
+		var total=0;
+		var marks;
+		var grade=0;
+		var counter;
+		var subjnos=0;
+		while(i==0)
+		{
+			marks = window.prompt("Enter another subject's marks");
+			grade=parseInt(marks);
+			total=total+grade;
+			document.writeln("the total marks so far are"+total+"<br>");
+			counter=window.prompt("please enter 0 if you want to continue");
+			i=parseInt(counter);
+			subjnos++;
+		}
+
+		document.writeln("the average is equal to"+total/subjnos);
+
+	</script>
+</head>
+<body>
+</body>
+</html>

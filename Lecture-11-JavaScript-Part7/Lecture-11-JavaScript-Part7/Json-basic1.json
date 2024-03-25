@@ -1,0 +1,7 @@
+    //in json key value pairs, key must be in double quotes
+{
+    "name": "Ahmed",
+    "cgpa": 3.4,
+    "isCR": false
+}
+

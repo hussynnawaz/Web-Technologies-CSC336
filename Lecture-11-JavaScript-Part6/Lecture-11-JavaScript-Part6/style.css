@@ -1,0 +1,9 @@
+ body { font-family: arial, helvetica, sans-serif; }
+ em { text-decoration: underline; }
+em { font-weight: bold;
+color: black; }
+h1 { font-family: tahoma, helvetica, sans-serif; }
+p { font-size: 12pt;
+font-family: arial, sans-serif; }
+.special { color: purple; }
+.indent {margin-right: 10px};

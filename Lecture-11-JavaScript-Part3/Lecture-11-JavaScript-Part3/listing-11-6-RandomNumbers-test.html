@@ -1,0 +1,39 @@
+ <!DOCTYPE html>
+<html>
+<head>
+	<meta charset = "utf-8">
+	<title>Shifted and Scaled Random Integers</title>
+	<style type = "text/css">
+		 p, ol 		{ margin: 0;
+				  font-size:4ex;
+				}
+ 		 li 		{ display: inline;
+				  margin-right: 12px;
+				  color:deeppink; }
+ 	</style>
+ </head>
+<body>
+	<h3>JavaScript Random number generation (1-6) in 30 times roll die</h3>
+	<script>
+	 var value;
+	 document.writeln( "<p style='color:blue;'>Random Numbers</p><ol>" );
+
+	 for ( var i = 1; i <= 30; ++i )
+ 	 {	value = Math.floor( 7 + Math.random() * 38 );  
+		document.writeln( "<li >" + value + "</li>" );
+	 }
+document.writeln( "</ol>" );
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+

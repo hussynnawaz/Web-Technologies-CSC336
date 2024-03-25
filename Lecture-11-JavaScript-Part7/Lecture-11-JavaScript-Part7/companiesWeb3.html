@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head><title>JSON Example-3</title></head>
+    <body>
+     <script type="text/javascript">
+        let companies=
+        `[
+            {"name":"BigTwo",
+                "noOfEmployees":1000,
+                "ceo":"Muhammad Daraab",
+                "rating":3.6
+            },
+            {"name":"ARY",
+                "noOfEmployees":15000,
+                "ceo":"Abdullah Bin Saeed",
+                "rating":7.9
+            },
+            {"name":"BOSS",
+                "noOfEmployees":1200,
+                "ceo":"Azhar Ali",
+                "rating":6.2
+            },
+            {"name":"NewOne",
+            "noOfEmployees":3,
+            "ceo":null,
+            "rating":3.2
+            }
+]`
+console.log(JSON.parse(companies));//convert string into object
+    </script>   
+    </body>
+</html>

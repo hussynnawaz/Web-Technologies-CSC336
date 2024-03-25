@@ -1,0 +1,28 @@
+ <!DOCTYPE html>
+<!-- var-let-const-2.html -->
+<html>
+<head></head>
+    <body>
+    <script>
+        var name="ali";
+        function f()
+        {
+            //var name="ali";
+            function modJS(ok)
+            {
+            if(ok)
+            {   var name="Abdullah";
+                var sname="Yousafzayee";
+                
+                console.log("It is "+ok+" that Player Name is "+name+" "+sname);
+            }
+            console.log(" Again saying that it is "+ok+" that Player Name is "+name+" "+sname);
+            }
+            var name="ali";
+                modJS(true);
+        }
+        f();
+        console.log(" Player Name is "+name);
+    </script>
+    </body>
+</html>

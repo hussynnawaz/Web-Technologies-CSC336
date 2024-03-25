@@ -1,0 +1,20 @@
+ <!DOCTYPE html>
+<!-- var-let-const-1.html -->
+<html>
+<head></head>
+    <body>
+    <script>
+        function modJS(ok)
+        {//let and const have block scope
+            if(ok)
+            {   let name="Abdullah";
+                const sname="Yousafzayee";
+                
+                console.log("It is "+ok+" that Player Name is "+name+" "+sname);
+            }
+            console.log(" Again saying that it is "+ok+" that Player Name is "+name+" "+sname);
+        }
+        modJS(true);
+    </script>
+    </body>
+</html>

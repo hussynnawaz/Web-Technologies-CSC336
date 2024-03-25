@@ -1,0 +1,62 @@
+ <!DOCTYPE html>
+<html>
+<head>	<meta charset = "utf-8">	<title>Random Dice Images</title>
+	<style type = "text/css">
+		 ul 		{ margin: 0;	}
+ 		 li 		{ display: inline;
+				  margin-right: 20px;  }
+ 	</style>
+	<script>
+	// variables used to interact with the i mg elements
+		 var die1Image;
+		 var die2Image;
+		 var die3Image;
+		 var die4Image;
+         var die5Image;
+	 // register button listener and get the img elements
+	 function start()
+	 {	var button = document.getElementById( "rollButton" );//control.addEventListener(event,function,false);
+		button.addEventListener( "click", rollDice, false );
+		die1Image = document.getElementById( "die1" );
+		die2Image = document.getElementById( "die2" );
+		die3Image = document.getElementById( "die3" );
+		die4Image = document.getElementById( "die4" );
+        die5Image = document.getElementById( "die5" );
+        
+	}//end of function rollDice
+	
+	// roll the dice
+	function rollDice()
+	 {	 setImage( die1Image );
+		 setImage( die2Image );
+		 setImage( die3Image );
+		 setImage( die4Image );
+         setImage( die5Image );
+         
+         
+	 } // end function rollDice
+
+	 // set image source for a die
+	 function setImage( dieImg )
+	 {
+		 var dieValue = Math.floor( 1 + Math.random() * 6 );
+		 dieImg.setAttribute( "src", "die" + dieValue + ".png" );
+      		 dieImg.setAttribute( "alt","die image with " + dieValue + " spot(s)" );
+	} //end function setImage()
+	
+	window.addEventListener( "load", start, false );//event capture,event handling
+	</script>	 
+ </head>
+<body>
+	<form action = "#">
+		 <input id = "rollButton" type = "button" value = "Roll Dice">
+	 </form>
+	 <ul>
+		<li><img id = "die1" src = "blank.png" alt = "die 1 image"></li>
+		<li><img id = "die2" src = "blank.png" alt = "die 2 image"></li>
+		<li><img id = "die3" src = "blank.png" alt = "die 3 image"></li>
+		<li><img id = "die4" src = "blank.png" alt = "die 4 image"></li>
+        <li><img id = "die5" src = "blank.png" alt = "die 5 image"></li>
+	</ul>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html> <html><head><meta charset=“utf-8”><title>FeedBackForm.html</title></head><body>
+<h1>Feed Back Form</h1>
+<p>Please fill up this form to help us improve our site</p>
+<form name="input" action="receiver.html" method="post" target="_tab">
+	<input type = "hidden" name = "recipient" value = "deitel@deitel.com"/>
+	<input type = "hidden" name = "subject" value = "Feedback Form"/>
+	<input type = "hidden" name = "redirect" value ="main.html"/>
+
+	<label>First name: <input type="text" name="firstname"></label><br/><br/>
+	Last name: <input type="text" name="lastname"><br/><br/>
+	Password: <input type="password" name="pwd"><br/><br/>
+
+	Gender:<input type="radio" name="gender" value="male">Male
+	<input type="radio" name="gender" value="female">Female
+	<input type="radio" name="gender" value="other">Other<br/><br/>
+	In which programming languages you love  to work?<br/>
+	 <input type="checkbox" name="plang" value="python">Python<br/>
+ 	<input type="checkbox" name=" plang " value="Cpp">C++ <br/>
+ 	<input type="checkbox" name=" plang " value="Chash">C# <br/>
+ 	<input type="checkbox" name=" plang " value="java">JAVA <br/><br/>
+ 	<textarea name="comments" rows="5" cols="40">Enter your comments about deitel & deitel books here </textarea><br/><br/>
+ 	<input type="submit" value="Submit">&nbsp;
+ 	<input type="reset" value="Cancel">
+ </form>
+ </body>
+ </html>

@@ -1,0 +1,23 @@
+ <!DOCTYPE html>
+<html>
+<body>
+
+<h1><font color="Green">Display a Week Input Control</font></h1>
+
+<p>The <strong><font color="orange">input type="week"</font></strong> allows the user to select a
+<font color="green"> week</font> and <font color="green">year</font>.</p>
+
+<p>If the browser supports it, a date picker pops up when entering the input field.</p>
+
+<form action="/action_page.php">
+  <label for="week">Select a week:</label>
+ 
+ <input type="week" id="week" name="week" min="1990" max="2020">
+
+  <input type="submit" value="Submit">
+</form>
+
+<p><strong>Note:</strong> type="week" is not supported in Firefox, Safari or Internet Explorer 21H1 (or earlier).</p>
+
+</body>
+</html>

@@ -1,0 +1,28 @@
+ <!DOCTYPE html><html>
+<body>
+<input type="button" onclick="favbook()" value="Your Fav Book">
+<script type="text/javascript">
+function favbook()
+{   var x;
+    var book=prompt("your favorite book","");
+    if( book == "history" )
+    {   x="You Like History"
+        document.write(x);
+    }
+    else if( book == "maths" )
+        {
+            x="You Like Maths"   
+            document.write(x);
+        }
+        else if( book == "economics" )
+            {
+                x="You Like Economics"   
+                document.write(x);
+            }
+            else
+            {
+                x="Unknown Book"
+                document.write(x);
+            }
+}
+</script></body></html>

@@ -1,0 +1,31 @@
+ <!DOCTYPE html>
+<html>
+<head>
+<script >
+	class Students{
+   
+   constructor(name,age,mclass)
+    {this.myname=name;
+    this.myage=age;
+    this.myclass=mclass;
+    }
+    setData(name,age,mclass)
+    {this.myname=name;
+    this.myage=age;
+    this.myclass=mclass;}
+
+   biodata()
+   { console.log(`I am ${this.myname}. I am ${this.myage} years old I am studying in ${this.myclass} standard`);}
+//$()searches through the DOM for any elements that match the provided selector and creates a new jQuery object that //references these elements:
+
+  // biodata(){document.writeln("i am "+this.myname+". My age is "+this.myage+" and I am studing in "+this.myclass+" class<br/><br/>");}
+}
+let st_obj1=new Students('Ahmed Abdullah',17,13);
+let st_obj2=new Students('Ali',20,14);
+st_obj1.biodata();
+//st_obj2.setData('Ali',20,14);
+st_obj2.biodata();
+
+</script>
+</head>
+</html>
